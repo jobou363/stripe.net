@@ -53,6 +53,7 @@
       <Link>Properties\SharedAssemblyInfo.cs</Link>
     </Compile>
     <Compile Include="Entities\StripeList.cs" />
+    <Compile Include="Entities\StripeProduct.cs" />
     <Compile Include="Entities\StripeRefund.cs" />
     <Compile Include="Entities\StripeBankAccount.cs" />
     <Compile Include="Entities\StripeBalanceTransaction.cs" />
@@ -64,6 +65,9 @@
     <Compile Include="Infrastructure\ExpandableProperty.cs" />
     <Compile Include="Services\Balance\StripeBalanceTransactionListOptions.cs" />
     <Compile Include="Services\Coupons\StripeCouponUpdateOptions.cs" />
+    <Compile Include="Services\Products\StripeProductCreateOptions.cs" />
+    <Compile Include="Services\Products\StripeProductService.cs" />
+    <Compile Include="Services\Products\StripeProductUpdateOptions.cs" />
     <Compile Include="Services\Refunds\StripeRefundCreateOptions.cs" />
     <Compile Include="Services\Refunds\StripeRefundService.cs" />
     <Compile Include="Services\Refunds\StripeRefundUpdateOptions.cs" />

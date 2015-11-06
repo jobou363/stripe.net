@@ -32,6 +32,11 @@
             get { return BaseUrl + "/plans"; }
         }
 
+        public static string Products
+        {
+            get { return BaseUrl + "/products"; }
+        }
+
         public static string Balance
         {
             get { return BaseUrl + "/balance"; }

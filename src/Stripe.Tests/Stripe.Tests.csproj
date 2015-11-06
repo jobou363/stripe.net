@@ -109,6 +109,11 @@
     <Compile Include="invoices\when_closing_an_invoice.cs" />
     <Compile Include="invoices\when_creating_an_invoice_with_an_api_key.cs" />
     <Compile Include="invoices\when_creating_an_invoice_with_failed_charge.cs" />
+    <Compile Include="products\product_behaviors.cs" />
+    <Compile Include="products\test_data\stripe_product_create_options.cs" />
+    <Compile Include="products\test_data\stripe_product_update_options.cs" />
+    <Compile Include="products\when_getting_a_product.cs" />
+    <Compile Include="products\when_listing_products.cs" />
     <Compile Include="plans\test_data\stripe_plan_update_options.cs" />
     <Compile Include="plans\when_updating_a_plan.cs" />
     <Compile Include="plans\when_creating_a_plan_with_an_interval_count.cs" />
