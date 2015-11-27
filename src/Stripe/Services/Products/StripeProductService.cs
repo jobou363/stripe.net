@@ -10,7 +10,7 @@ namespace Stripe
         {
             requestOptions = SetupRequestOptions(requestOptions);
 
-            var url = this.ApplyAllParameters(createOptions, Urls.Plans, false);
+            var url = this.ApplyAllParameters(createOptions, Urls.Products, false);
 
             var response = Requestor.PostString(url, requestOptions);
 
@@ -21,7 +21,7 @@ namespace Stripe
         {
             requestOptions = SetupRequestOptions(requestOptions);
 
-            var url = string.Format("{0}/{1}", Urls.Plans, planId);
+            var url = string.Format("{0}/{1}", Urls.Products, planId);
             url = this.ApplyAllParameters(null, url, false);
 
             var response = Requestor.GetString(url, requestOptions);
@@ -42,7 +42,7 @@ namespace Stripe
         {
             requestOptions = SetupRequestOptions(requestOptions);
 
-            var url = string.Format("{0}/{1}", Urls.Plans, planId);
+            var url = string.Format("{0}/{1}", Urls.Products, planId);
             url = this.ApplyAllParameters(updateOptions, url, false);
 
             var response = Requestor.PostString(url, requestOptions);
@@ -54,7 +54,7 @@ namespace Stripe
         {
             requestOptions = SetupRequestOptions(requestOptions);
 
-            var url = Urls.Plans;
+            var url = Urls.Products;
             url = this.ApplyAllParameters(listOptions, url, true);
 
             var response = Requestor.GetString(url, requestOptions);

@@ -30,7 +30,7 @@ namespace Stripe
         public Dictionary<string, string> Metadata { get; set; }
 
         [JsonProperty("package_dimensions")]
-        public Dictionary<string, string> PackageDimensions { get; set; }
+        public Dictionary<string, decimal> PackageDimensions { get; set; }
 
         [JsonProperty("shippable")]
         public bool Shippable { get; set; }

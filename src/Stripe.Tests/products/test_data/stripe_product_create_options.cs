@@ -9,13 +9,13 @@ namespace Stripe.Tests.test_data
         {
             return new StripeProductCreateOptions()
             {
-                Id = "test-product-" + Guid.NewGuid(),
+                Id = "test-product-" + Guid.NewGuid(),                       
                 Active = true,
                 Caption = "Test Product Caption",
                 Name = "Test Product Name",
                 Description = "Test Product Description",
                 Shippable = false,
-                Attributes = new string[] { "Attribute 1", "Attribute 2" },
+                //Attributes = new string[] { "Attribute 1", "Attribute 2" },
                 PackageDimensions = new Dictionary<string, decimal>
                 {
                     { "height", 10m },
@@ -24,12 +24,13 @@ namespace Stripe.Tests.test_data
                     { "width", 10m }
                 },
                 Url = "https://www.url.url",
-                Images = new string[] { "https://www.url.url" },
-                Metadata = new Dictionary<string, string>
-                {
-                    { "A", "Value-A" },
-                    { "B", "Value-B" }
-                }                
+                //Images = new string[] { "https://www.url.url" },
+                //Metadata = new Dictionary<string, string>
+                //{
+                //    { "A", "Value-A" },
+                //    { "B", "Value-B" }
+                //},                
+                
             };
         }
     }
